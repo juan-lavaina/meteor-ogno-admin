@@ -31,6 +31,7 @@ OgnoAdmin = (function () {
      * Returns a string more human readable, by prettifying it.
      */
     function prettify(string) {
+        if(!string){return ""}
         string = string.replace(/[-_]+/g, ' ');
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
     }
